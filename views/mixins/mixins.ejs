@@ -1,0 +1,42 @@
+    <div class="postformcontainer">
+        <div class="userimagecontainer">
+            <img src="<%= userLoggedIn.profilepic %>" >
+        </div>
+        <div class="textareacontainer">
+            <textarea id="postTextarea" placeholder="What's happening"></textarea>
+            <div class="buttonscontainer">
+                <button id="submitPostButton" disabled="">Post</button>
+            </div>
+        </div>
+    </div>
+
+<div class="postcontainer"></div>
+
+    <!-- Modal -->
+<div class="modal fade" id="replyModal" tabindex="-1" aria-labelledby="replyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="replyModalLabel">Reply</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="originalPostContainer"></div>
+            <div class="postformcontainer">
+                <div class="userimagecontainer">
+                    <img src="<%= userLoggedIn.profilepic %>" >
+                </div>
+                <div class="textareacontainer">
+                    <textarea id="replyTextarea" placeholder="What's happening"></textarea>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="submitReplyButton" class="btn btn-primary" disabled="">Reply</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+    
+

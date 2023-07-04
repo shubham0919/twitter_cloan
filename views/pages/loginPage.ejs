@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="logincontainer">
+        <h1>Login</h1>
+        <form method="POST">
+
+            <p class="text-danger"><%= errorMessage %></p>
+
+            <input class="rounded-pill" type="text" name="logusername" placeholder="Enter username or email" required="">
+            <input class="rounded-pill" type="password" name="logpassword" placeholder="Password" required="">
+            <input class="btn btn-primary rounded-pill " type="submit" value="Login">
+        </form>
+        <a href="/reg/register">Creat New Acoount? Register Here</a>
+    </div>
+</div>

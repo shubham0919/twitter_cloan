@@ -1,0 +1,59 @@
+<div class="wrapper">
+    <div class="logincontainer">
+      <h1>Register</h1>
+      
+              <p class="text-danger"><%= errorMessage %></p>
+      <form
+        method="POST"
+        id="registerform"
+        onsubmit="event.preventDefault(); validateForm();"
+      >
+
+        <input
+          class="rounded-pill"
+          type="text"
+          name="fistname"
+          placeholder="Fist Name"
+          required=""
+        />
+        <input
+          type="text"
+          name="lastname"
+          class="rounded-pill"
+          placeholder="Last Name"
+          required=""
+        />
+        <input
+          type="text"
+          name="username"
+          class="rounded-pill"
+          placeholder="Username"
+          required=""
+        />
+        <input
+          type="email"
+          name="email" 
+          placeholder="Email" 
+          class="rounded-pill"
+          required="" />
+        <input
+          id="password"
+          type="password"
+          name="password"
+          class="rounded-pill"
+          placeholder="Password"
+          required=""
+        />
+        <input
+          id="passwordconf"
+          type="password"
+          name="passwordconf"
+          class="rounded-pill"
+          placeholder="Confirm Paswword"
+          required=""
+        />
+        <input type="submit" class="btn btn-primary rounded-pill " value="Login" />
+      </form>
+      <a href="/log/login">Login Here.</a>
+    </div>
+  </div>
